@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Removing scroll bar */
+html {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+body {
+    background: #fff;
+    color: #646f87;
+}
+
+
+
+#home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#home .container {
+    margin-bottom: 90px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+
+/* now for left bar social icons */
+#home .content-left-bar {
+    position: fixed;
+    left: 30px;
+}
+
+#home .social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6f7c96;
+    width: 42px;
+    height: 42px;
+    margin: 3px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 250ms linear;
+}
+
+
+.social .social-link i {
+    font-size: 24px;
+    line-height: 42px;
+    transition: 250ms;
+}
+
+.social .whatsapp i,
+.social .facebook {
+    font-size: 27px;
+}
+
+.social .github i,
+.social .telegram i,
+.social .instagram i
+ {
+    font-size: 26px;
+}
+
+.social .social-link:hover {
+    transform: translateX(6px) scale(1.05);
+}
+
+.social .social-link:hover i{
+    color: #00a78e;
+}
+
+
+
+
+
+
+
+
+/* now for right bar dot map section */
+#home .content-right-bar {
+    position: fixed;
+    right: 30px;
+}
+
+#home .content-right-bar .dot-map {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-right-bar .dot-map .dot {
+    background-color: transparent;
+    flex: 0 0 22px;
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+
+.content-right-bar .dot-map .dot span {
+    display: block;
+    height: 100%;
+    width: 22px;
+    border-radius: 15px;
+    background: #c5ebe4;
+    transition: 400ms;
+}
+
+.content-right-bar .dot-map .dot span:hover,
+.content-right-bar .dot-map .dot  span.activeColor{
+    background-color: #00a78e;
+}
+
+.content-right-bar .dot-map .dot.activeExpand {
+    flex: 0 0 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* now for home content */
+.middle-content {
+    margin:0 auto;
+    user-select: none;
+    width: 1200px;
+}
+
+.middle-content .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-content .content .left {
+    width: 570px;
+}
+
+.middle-content .content .left .greeting {
+    margin-bottom: 50px;
+    font-size: 24px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.greeting .hand-greeting {
+    font-size: 27px;
+}
+
+
+
+.greeting span  {
+    opacity: 0;
+    transition: all 200ms ease;
+    font-family: "Kaushan Script", cursive;
+}
+
+.greeting span.fade {
+    opacity: 1 ;
+}
+
+
+
+
+
+
+
+.middle-content .content .left .name,
+.middle-content .content .left .field {
+    font-family: "Kaushan Script", cursive;
+    line-height: 45px;
+    font-size: 33px;
+}
+
+.name span, 
+.field span {
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.name span.fadeFirst,
+.field span.fadeFirst {
+    opacity: 1;
+}
+
+.name span.fadeSecond,
+.field span.fadeSecond {
+    opacity: 1;
+    color: #00a78e;
+    transition: color 500ms ease; 
+}
+
+
+
+
+
+
+
+.middle-content .content .left .description {
+    margin-top: 25px;
+    line-height: 25px;
+    font-weight: 550;
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Kaushan Script", cursive;
+}
+
+.left .actions {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.actions a {
+    background-color: #008080;
+    border: 1px solid #008080;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 400ms ease , transform 500ms ease;
+}
+
+
+.actions .hire {
+    padding: 11px;
+    height: 84px;
+    width: 84px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Kaushan Script", cursive;
+}
+
+
+.actions .resume {
+    padding: 11px 16px;
+    background-color: #ED254E;
+    border: 1px solid #ED254E;
+    display: flex;
+    align-items: center;
+}
+
+.actions .resume i {
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+
+
+.actions .resume:hover {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.actions .hire:hover {
+    background-color: #646f87;
+    border: 1px solid #646f87;
+    transform: scale(1.1);
+}
+
+.actions .power {
+    position: absolute;
+    right: 0;
+    line-height: 90px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: transparent;
+}
+
+.power span  {
+    opacity: 0;
+    transition: all 300ms ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.power span.fade {  
+    transition-delay: 2.8s;
+    opacity: 1 ;
+    color: #fff;
+}
+
+
+
+
+
+
+.middle-content .content .right .home-profile {
+    width: 420px;
+    height: 420px;
+    /* background-image: url("../images/picture0.png");   */
+    /* background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; */
+    /* box-shadow: #14d6d612 0px 1px 24px; */
+    overflow: hidden;
+    position: relative;
+    transition: 400ms;
+    animation: animateProfile 12s ease-in-out infinite;
+}
+
+.home-profile img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+@keyframes animateProfile {
+    0%, 100% {
+        transform: translateY(0);
+    
+    }50% {
+        transform: translateY(-35px);
+    }
+}
+
+
+
+
+#home .scroll-down {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 300ms;
+    animation: scroll-down 3s ease-in-out infinite;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+.scroll-down .down-icon {
+    font-size: 22px;
+    color: #8989af;
+    transition: 300ms;
+}
+
+.down-icon:hover {
+    color: #14d6d6;
+}
+
+@keyframes scroll-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+.isHidden {
+    display: none;
+}
+
+
+
+
+
+
+
+section h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1450px) {
+
+    /* now for left bar social icons */
+    #home .content-left-bar {
+        left: 25px;
+    }
+
+    .social .social-link {
+        width: 39px;
+        height: 39px;
+        margin: 2px 0;
+    }
+
+
+    .social .social-link i {
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    .social .whatsapp i,
+    .social .facebook {
+        font-size: 25px;
+    }
+
+    .social .github i,
+    .social .telegram i,
+    .social .instagram i
+    {
+        font-size: 24px;
+    }
+
+
+
+
+    /* now for right bar dot map section */
+    #home .content-right-bar {
+        right: 25px;
+    }
+
+    .content-right-bar .dot-map .dot {
+        flex: 0 0 20px;
+        height: 20px;
+        margin: 5px 0;
+    }
+
+    .content-right-bar .dot-map .dot span {
+        width: 20px;
+    }
+
+    .content-right-bar .dot-map .dot.activeExpand {
+        flex: 0 0 45px;
+    }
+
+
+
+    /* now for home content */
+    .middle-content {
+        width: 1000px;
+    }
+
+    .middle-content .content .left {
+        width: 540px;
+    }
+
+    .middle-content .content .left .greeting {
+        margin-bottom: 25px;
+        font-size: 21px;
+    }
+
+    .greeting .hand-greeting {
+        font-size: 25px;
+    }
+
+    .left .name,
+    .left .field {
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+
+    .left .description {
+        margin-top: 15px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .left .actions {
+        margin-top: 35px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .actions a {
+        font-size: 14px;
+    }
+
+    .actions .hire {
+        padding: 10px;
+        height: 75px;
+        width: 75px;
+        font-size: 16px;
+    }
+
+    .actions .resume {
+        padding: 10px 13px;
+    }
+
+    .actions .resume i {
+        font-size: 20px;
+    }
+
+    .actions .power {
+        font-size: 16px;
+    }
+
+
+
+
+
+    .middle-content .content .right .home-profile {
+        width: 310px;
+        height: 310px;
+    }
+
+}

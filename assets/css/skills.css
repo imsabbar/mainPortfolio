@@ -1,0 +1,343 @@
+
+#skills{
+    height: 100%;
+    padding-top: 40px;
+    margin-top: 140px;
+}
+
+#skills .skills-title {
+    color: #646f87;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.skills-title span {
+    color: #14d6d6;
+}
+
+#skills .skills-text {
+    color: #646f87;
+    font-size: 18px;
+    margin: 25px auto 0;
+    text-align: center;
+    font-family: 'Ubuntu',  sans-serif;
+    line-height: 27px;
+    max-width: 650px;
+    font-weight: 550;
+}
+
+
+#skills .technical-skills {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 1200px;
+}
+
+.technical-skills .left,
+.technical-skills .right {
+    width: 50%;
+}
+
+.left .skill,
+.right .skill {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.skill .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+
+.skill .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.icon img {
+    width: 100%;
+}
+
+
+
+
+
+/* .skill .info .skill-info {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.skill-info .subject {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+
+
+
+.skill .info .skill-progress {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: #d0ebeb;
+    border-radius: 15px;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateProgress 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skill-progress span {
+    position: absolute;
+    height: 100%;
+    background-color: #14d6d6;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateProgress 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animateProgress {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+.skill-progress span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -14px;
+    border: 12px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #14d6d6;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+
+.skill-progress span::after {
+    position: absolute;
+    right: 0;
+    top: -33px;
+    background-color: #14d6d6;
+    padding: 5px 7px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 7px;
+
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.skill-progress.html5 span::after {
+    content: "100%";
+}
+
+.skill-progress.css3 span::after {
+    content: "100%";
+}
+
+.skill-progress.js span::after {
+    content: "99%";
+}
+
+.skill-progress.jquery span::after {
+    content: "95%";
+}
+
+.skill-progress.ajax span::after {
+    content: "95%";
+}
+
+.skill-progress.php span::after {
+    content: "95%";
+}
+
+.skill-progress.mysql span::after {
+    content: "100%";
+}
+
+.skill-progress.mongodb span::after {
+    content: "100%";
+}
+
+.skill-progress.laravel span::after {
+    content: "85%";
+}
+
+.skill-progress.wordpress span::after {
+    content: "85%";
+}
+
+.skill-progress.woocomerce span::after {
+    content: "70%";
+}
+
+.skill-progress.git span::after {
+    content: "100%";
+}
+
+.skill-progress.github span::after {
+    content: "100%";
+}
+
+.skill-progress.python span::after {
+    content: "95%";
+}
+
+.skill-progress.java span::after {
+    content: "100%";
+}
+
+.skill-progress.react span::after {
+    content: "80%";
+}
+
+.skill-progress.R span::after {
+    content: "85%";
+}
+
+.skill-progress.jupyter span::after {
+    content: "100%";
+}
+
+
+
+
+
+.skill-progress.html5 span {
+    width: 100%;
+}
+
+.skill-progress.css3 span {
+    width: 100%;
+}
+
+.skill-progress.js span {
+    width: 99%;
+}
+
+.skill-progress.jquery span {
+    width: 95%;
+}
+
+.skill-progress.ajax span {
+    width: 95%;
+}
+
+.skill-progress.php span {
+    width: 95%;
+}
+
+.skill-progress.mysql span {
+    width: 100%;
+}
+
+.skill-progress.mongodb span {
+    width: 100%;
+}
+
+.skill-progress.laravel span {
+    width: 85%;
+}
+
+.skill-progress.wordpress span {
+    width: 85%;
+}
+
+.skill-progress.woocomerce span {
+    width: 70%;
+}
+
+.skill-progress.git span {
+    width: 100%;
+}
+
+.skill-progress.github span {
+    width: 100%;
+}
+
+.skill-progress.react span {
+    width: 80%;
+}
+
+.skill-progress.python span {
+    width: 95%;
+}
+
+.skill-progress.java span {
+    width: 85%;
+}
+
+.skill-progress.R span {
+    width: 85%;
+}
+
+.skill-progress.jupyter span {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1450px) {
+
+    #skills .skills-title {
+        font-size: 34px;
+    }
+
+    #skills .skills-text {
+        font-size: 17px;
+        margin: 18px auto 0;
+        line-height: 25px;
+        max-width: 600px;
+    }
+
+
+    #skills .technical-skills {
+        width: 1000px;
+        gap: 80px;
+    }
+
+    .skill .icon {
+        width: 62px;
+        height: 62px;
+    }
+}

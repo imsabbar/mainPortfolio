@@ -1,0 +1,77 @@
+/* This is back-to-top arrow*/
+#progress {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 48px;
+    width: 48px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 7px 30px rgba(121, 106, 153, 0.2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+
+#progress-value {
+    display: block ;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: #11c4c4;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1350px) {
+
+    #progress{
+        width: 46px;
+        height: 46px;
+    }
+
+    #progress-value {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #progress{
+        width: 45px;
+        height: 45px;
+    }
+
+    #progress-value {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #progress{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #progress{
+        width: 43px;
+        height: 43px;
+    }
+
+    #progress-value {
+        font-size: 17px;
+    }
+}

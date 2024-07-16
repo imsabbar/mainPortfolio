@@ -1,0 +1,255 @@
+
+#about {
+    padding-top: 40px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about .about-title {
+    color: #646f87;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.about-title span {
+    color: #14d6d6;
+}
+
+.about-text {
+    color: #646f87;
+    font-size: 18px;
+    margin: 25px auto 0;
+    text-align: center;
+    font-family: 'Ubuntu',  sans-serif;
+    line-height: 27px;
+    max-width: 650px;    
+    font-weight: 550;
+}
+
+
+
+#about .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#about .container .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 70px;
+}
+
+.left .about-profile {
+    margin-top: 7px;
+    width: 300px;
+    height: 300px;
+    background: #080a18;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: 400ms;
+    animation: animateAbout 7s ease-in-out infinite;
+}
+
+
+.about-profile img {
+    width: 100%;
+}
+
+@keyframes animateAbout {
+    0% , 100% {
+        transform: translateY(0px);
+
+    }50% {
+        transform: translateY(7px);
+    }
+}
+
+
+
+
+.container .left .action {
+    margin: 80px 0 0;
+}
+
+.action a {
+    padding: 13px 27px;
+    border: 2px solid #00c3ca;
+    color: #F5F5F5;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 33px;
+    background-color: #00c3ca;
+    transition: 300ms ease;
+}
+
+.action a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #000;
+}
+
+
+
+
+
+
+#about .container .right {
+    max-width: 560px;
+    text-align: left;
+} 
+
+.right h2 {
+    text-align: left;
+    font-size: 29px;
+    line-height: 40px;
+    color: #646f87;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right h2 span {
+    color: #14d6d6;
+}
+
+.right .description {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 560px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.right .experience {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.experience .tab {
+    background-color: #151a3b;
+    color: #F5F5F5;
+    padding: 25px 20px;
+    width: 180px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: default;
+}
+
+.experience .tab .icon {
+    color: #14d6d6;
+    font-size: 30px;
+}
+
+.experience .tab h3 {
+    margin-top: 10px;
+    font-size: 26px;
+    color: #14d6d6;
+}
+
+.experience .tab p {
+    margin-top: 8px;
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1450px) {
+
+    #about .about-title {
+        font-size: 34px;
+    }
+
+    .about-text {
+        font-size: 17px;
+        margin: 18px auto 0;
+        line-height: 25px;
+        max-width: 600px;
+    }
+
+    #about .container {
+        margin-top: 60px;
+    }
+
+    .container .left {
+        width: 350px;
+        margin-right: 60px;
+    }
+
+    .left .about-profile {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+
+    .container .left .action {
+        margin-top: 60px;
+    }
+
+    .action a {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+
+
+
+
+    /* Now for right content */
+    #about .container .right {
+        max-width: 515px;
+    }
+
+    .right h2 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+
+    .right .description {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 515px;
+    }
+
+    .right .experience .tab{
+        padding: 20px 15px;
+        width: 165px;
+    }
+
+    .experience .tab .icon {
+        font-size: 28px;
+    }
+
+    .experience .tab h3 {
+        font-size: 25px;
+    }
+    
+}
