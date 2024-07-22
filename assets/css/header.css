@@ -59,8 +59,9 @@ header{
 
 header .logo h2 {
     font-size: 44px;
-    color: #646f87;
+    color: #828ea7;
     font-family: "Kaushan Script", cursive;
+    font-weight: 550;
 }
 
 header .logo h2 span {
@@ -91,14 +92,14 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color:#646f87 ;
+    color:#828ea7 ;
     text-decoration: none;
     font-size: 21px;
     padding: 7px 0;
     border-radius: 27px;
-    font-weight: 600;
+    font-weight: 550;
     margin:0 14px;
-    transition: 200ms ease-in;
+    transition: 180ms ease-in;
     background: transparent;
     font-family: "Kaushan Script", cursive;
 }
@@ -112,17 +113,21 @@ nav ul li a:after {
     height: 2px;
     width: 0%;
     left: 0;
-    bottom: 1px;
-    transition: 400ms;
+    bottom: 3px;
+    transition: 300ms;
 }
 
 nav ul li a:hover:after {
     width: 100%;
 }
 
-nav ul li a:hover,
-nav ul li a.active  {
+nav ul li a:hover{
     color: #14d6d6;
+}
+
+nav ul li a.active {
+    color: #14d6d6;
+    font-weight: 600;
 }
 
 

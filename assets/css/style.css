@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 
 body {
     background: #fff;
-    color: #646f87;
+    color: #828ea7;
 }
 
 
@@ -149,7 +149,6 @@ body {
 
 
 
-
 /* now for home content */
 .middle-content {
     margin:0 auto;
@@ -171,6 +170,7 @@ body {
 .middle-content .content .left .greeting {
     margin-bottom: 50px;
     font-size: 24px;
+    font-weight: 600;
     padding: 10px 0;
     overflow: hidden;
 }
@@ -190,8 +190,6 @@ body {
 .greeting span.fade {
     opacity: 1 ;
 }
-
-
 
 
 
@@ -221,6 +219,50 @@ body {
     color: #00a78e;
     transition: color 500ms ease; 
 }
+
+
+
+
+/* now moving to second text animation for FIELD */
+.fieldUpdate {
+    position: relative;
+    font-family: "Kaushan Script", cursive;
+    line-height: 45px;
+    font-size: 33px;
+    overflow: hidden;
+}
+
+.fieldUpdate .second-text {
+    position: relative;
+    color: #00a78e;
+}
+
+
+/* Styling for the border effect */
+.fieldUpdate .second-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #00a78e;
+    animation: animate 6s steps(24) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    
+    }100% {
+        left: 0%;
+    }
+}
+
+
+
+
 
 
 
@@ -297,7 +339,7 @@ body {
     transform: scale(1.1);
 }
 
-.actions .power {
+.actions .quote {
     position: absolute;
     right: 0;
     line-height: 90px;
@@ -306,13 +348,13 @@ body {
     color: transparent;
 }
 
-.power span  {
+.quote span  {
     opacity: 0;
     transition: all 300ms ease;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.power span.fade {  
+.quote span.fade {  
     transition-delay: 2.8s;
     opacity: 1 ;
     color: #fff;
@@ -523,7 +565,7 @@ section h2 {
         font-size: 20px;
     }
 
-    .actions .power {
+    .actions .quote {
         font-size: 16px;
     }
 
