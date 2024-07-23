@@ -14,7 +14,7 @@
 }
 
 .skills-title span {
-    color: #14d6d6;
+    color: #02bea2;
 }
 
 #skills .skills-text {
@@ -107,7 +107,7 @@
 .skill-progress span {
     position: absolute;
     height: 100%;
-    background-color: #14d6d6;
+    background-color: #02bea2;
     border-radius: 15px;
     color: white;
     font-weight: 600;
@@ -133,7 +133,7 @@
     border: 12px solid transparent;
     border-bottom-width: 0;
     border-right-width: 0;
-    border-top-color: #14d6d6;
+    border-top-color: #02bea2;
     opacity: 0;
     animation: showText 0.5s 1.5s linear forwards;
 }
@@ -143,7 +143,7 @@
     position: absolute;
     right: 0;
     top: -33px;
-    background-color: #14d6d6;
+    background-color: #02bea2;
     padding: 5px 7px;
     font-weight: 500;
     font-size: 13px;
@@ -199,11 +199,11 @@
 }
 
 .skill-progress.wordpress span::after {
-    content: "85%";
+    content: "100%";
 }
 
 .skill-progress.woocomerce span::after {
-    content: "70%";
+    content: "100%";
 }
 
 .skill-progress.git span::after {
@@ -275,11 +275,11 @@
 }
 
 .skill-progress.wordpress span {
-    width: 85%;
+    width: 100%;
 }
 
 .skill-progress.woocomerce span {
-    width: 70%;
+    width: 100%;
 }
 
 .skill-progress.git span {

@@ -59,14 +59,14 @@ header{
 
 header .logo h2 {
     font-size: 44px;
-    color: #828ea7;
+    color: #6d7b99;
     font-family: "Kaushan Script", cursive;
     font-weight: 550;
 }
 
 header .logo h2 span {
     font-size: 45px;
-    color: #14d6d6;
+    color: #00A78E;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -92,7 +92,7 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color:#828ea7 ;
+    color:#6d7b99 ;
     text-decoration: none;
     font-size: 21px;
     padding: 7px 0;
@@ -109,7 +109,7 @@ nav ul li a {
 nav ul li a:after {
     position: absolute;
     content: "";
-    background-color: #14d6d6;
+    background-color: #00A78E;
     height: 2px;
     width: 0%;
     left: 0;
@@ -122,11 +122,11 @@ nav ul li a:hover:after {
 }
 
 nav ul li a:hover{
-    color: #14d6d6;
+    color: #00A78E;
 }
 
 nav ul li a.active {
-    color: #14d6d6;
+    color: #00A78E;
     font-weight: 600;
 }
 
@@ -233,9 +233,9 @@ nav ul li a.active {
 
 
 footer {
-    height: 55px;
+    height: 42px;
     width: 100%;
-    background-color: #03030e;
+    background-color: #00A78E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,7 @@ footer {
 
 footer a {
     font-family: "Kaushan Script", cursive;
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 1px;
@@ -255,9 +255,7 @@ footer a .me {
     transition: 300ms;
 }
 
-footer a:hover .me{
-    color: #14d6d6;
-}
+
 
 
 

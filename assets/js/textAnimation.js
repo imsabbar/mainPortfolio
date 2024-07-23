@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call the textLoad function after creating the spans
     textLoad(secondSpan);
 
-  }, 3000); 
+  }, 4000); 
 });
 
 function textLoad(secondSpan) {
@@ -163,9 +163,9 @@ function textLoad(secondSpan) {
 
   setTimeout(() => {
     secondSpan.textContent = "Full Stack WEB Developer";
-  }, 6100);
+  }, 5000);
 
   setTimeout(() => {
     textLoad(secondSpan); // Recursive call to repeat the process
-  }, 12000); // Total duration for both text changes
+  }, 10000); // Total duration for both text changes
 }

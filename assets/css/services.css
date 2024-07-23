@@ -3,6 +3,8 @@
     height: 100%;
     padding-top: 40px;
     margin-top: 140px;
+    background-color: #f7f8fd;
+    padding: 80px 0;
 }
 
 
@@ -15,7 +17,7 @@
 }
 
 .services-title span {
-    color: #14d6d6;
+    color: #5a58e9;
 }
 
 #services .services-text {
@@ -33,7 +35,7 @@
 
 #services .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 360px));
     justify-content: center;
     gap: 30px;
     width: 1200px;
@@ -41,37 +43,36 @@
 }
 
 .service-box {
-    height: 320px;
-    background: #080a18;
-    color: #fff;
+    height: 340px;
+    background: #fff;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    transition: 500ms ease;
+    transition: 300ms ease;
     cursor: default;
-    border: 1px solid #080a18;
     text-align: center;
+    box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
 }
 
 .service-box:hover {
-    top: -4%;
-    transform: translateY(-4%) ;
+    top: -5%;
+    transform: translateY(-5%) ;
 }
 
 .service-box .service-icon {
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: #14d6d6;
+    background: #02bea2;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     transform-style: preserve-3d;
-    transition: all 300ms ease-out 0s;
+    transition: all 200ms ease-out 0s;
 }
 
 .service-box .service-icon::before {
@@ -81,7 +82,7 @@
     top: -8px;
     height: 100%;
     width: 100%;
-    background: #313147;
+    background: #cbf1ea;
     transition: all .3s ease-out 0s;
     transform: translateZ(-1px)
 }
@@ -89,6 +90,13 @@
 .service-icon .icon {
     font-size: 25px;
     color: #fff;
+    transition: 200ms ease;
+}
+
+
+
+.service-box:hover {
+    background-color: #02bea2;
 }
 
 
@@ -99,18 +107,16 @@
     border-radius: 10px;
 }
 
-.service-box:hover > .service-icon .icon {
-    color: #f5F5F5;
-}
 
 .service-box:hover > .service-icon {
-    background-color: #14d6d6;
+    background-color: #fff;
     border-radius: 10px;
 }
 
-
-
-
+.service-box:hover > .service-icon .icon {
+    color: #02bea2;
+    font-size: 23px;
+}
 
 
 
@@ -119,14 +125,22 @@
     margin: 18px;
     font-size: 23px;
     line-height: 30px;
-    font-weight: 500;
-    color: #f5F5F5;
+    font-weight: 550;
+    color: #02bea2;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .service-box .service-description {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #646f87;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.service-box:hover > .service-content .service-title , 
+.service-box:hover > .service-content .service-description {
+    color: #fff;
 }
 
 

@@ -84,11 +84,11 @@ body {
 }
 
 .social .social-link:hover {
-    transform: translateX(6px) scale(1.05);
+    transform: translateX(6px) scale(1.07);
 }
 
 .social .social-link:hover i{
-    color: #00a78e;
+    color: #ff6161;
 }
 
 
@@ -126,13 +126,13 @@ body {
     height: 100%;
     width: 22px;
     border-radius: 15px;
-    background: #c5ebe4;
+    background: #b5b4ff;
     transition: 400ms;
 }
 
 .content-right-bar .dot-map .dot span:hover,
 .content-right-bar .dot-map .dot  span.activeColor{
-    background-color: #00a78e;
+    background-color: #5a58e9;
 }
 
 .content-right-bar .dot-map .dot.activeExpand {
@@ -185,6 +185,7 @@ body {
     opacity: 0;
     transition: all 200ms ease;
     font-family: "Kaushan Script", cursive;
+    color: #252525;
 }
 
 .greeting span.fade {
@@ -197,7 +198,7 @@ body {
 
 .middle-content .content .left .name,
 .middle-content .content .left .field {
-    font-family: "Kaushan Script", cursive;
+    font-family: "Ubuntu", sans-serif;
     line-height: 45px;
     font-size: 33px;
 }
@@ -226,7 +227,7 @@ body {
 /* now moving to second text animation for FIELD */
 .fieldUpdate {
     position: relative;
-    font-family: "Kaushan Script", cursive;
+    font-family: "Ubuntu", sans-serif;
     line-height: 45px;
     font-size: 33px;
     overflow: hidden;
@@ -248,12 +249,12 @@ body {
     height: 100%;
     background-color: #fff;
     border-left: 2px solid #00a78e;
-    animation: animate 6s steps(24) infinite;
+    animation: animate 5s steps(24) infinite;
 }
 
 @keyframes animate {
     40%, 60% {
-        left: 100%;
+        left: calc(100% + 4px);
     
     }100% {
         left: 0%;
@@ -273,10 +274,10 @@ body {
 .middle-content .content .left .description {
     margin-top: 25px;
     line-height: 25px;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 18px;
     text-align: justify;
-    font-family: "Kaushan Script", cursive;
+    font-family: "Ubuntu" , sans-serif;
 }
 
 .left .actions {
@@ -290,8 +291,8 @@ body {
 
 
 .actions a {
-    background-color: #008080;
-    border: 1px solid #008080;
+    background-color: #5a58e9;
+    border: 1px solid #5a58e9;
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
@@ -319,6 +320,8 @@ body {
     border: 1px solid #ED254E;
     display: flex;
     align-items: center;
+    font-family: 'kaushan Script' , cursive;
+    font-size: 18px;
 }
 
 .actions .resume i {
@@ -334,8 +337,8 @@ body {
 }
 
 .actions .hire:hover {
-    background-color: #646f87;
-    border: 1px solid #646f87;
+    background-color: #00a78e;
+    border: 1px solid #00a78e;
     transform: scale(1.1);
 }
 
@@ -382,6 +385,7 @@ body {
 .home-profile img {
     height: 100%;
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 

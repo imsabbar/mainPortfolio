@@ -17,7 +17,7 @@
 }
 
 .about-title span {
-    color: #14d6d6;
+    color: #00A78E;
 }
 
 .about-text {
@@ -32,40 +32,106 @@
 }
 
 
-
 #about .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    max-width: 1300px;
+    height: 720px;
+    margin: 70px auto;
+    justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+#about .container .right {
+    background-color: #F8F9FE;
+    padding: 40px 70px;
+    width: 55%;
+    text-align: left;
+    height: 100%;
+}
+
+
+.right h2 {
+    text-align: left;
+    font-size: 29px;
+    line-height: 40px;
+    color: #646f87;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right h2 span {
+    color: #02bea2;
+}
+
+.right .description {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 560px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.right .experience {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10px;
+}
+
+.experience .tab {
+    background-color: #313b50;
+    color: #F5F5F5;
+    padding: 22px 26px;
+    width: 170px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: default;
+    border-bottom: 14px solid #02bea2;
+}
+
+.experience .tab .icon {
+    color: #02bea2;
+    font-size: 28px;
+}
+
+.experience .tab h3 {
+    margin-top: 12px;
+    font-size: 32px;
+    color: #F8F9FE;
+}
+
+.experience .tab p {
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
 
 #about .container .left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    margin-right: 70px;
+    width: 45%;
 }
 
-.left .about-profile {
-    margin-top: 7px;
-    width: 300px;
-    height: 300px;
-    background: #080a18;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    transition: 400ms;
-    animation: animateAbout 7s ease-in-out infinite;
-}
-
-
-.about-profile img {
+#about .container .left .myProfile {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
+
+/*
+
 
 @keyframes animateAbout {
     0% , 100% {
@@ -171,7 +237,7 @@
     font-weight: 500;
 }
 
-
+*/
 
 
 
