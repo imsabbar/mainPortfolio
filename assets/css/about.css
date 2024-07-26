@@ -1,15 +1,16 @@
 
 #about {
-    padding-top: 40px;
+    padding: 60px 0;
     height: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #fffffe;
 }
 
 #about .about-title {
-    color: #646f87;
+    color: #525363;
     font-size: 37px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
@@ -21,7 +22,7 @@
 }
 
 .about-text {
-    color: #646f87;
+    color: #525363;
     font-size: 18px;
     margin: 25px auto 0;
     text-align: center;
@@ -46,7 +47,7 @@
 }
 
 #about .container .right {
-    background-color: #F8F9FE;
+    background-color: #fffdf8;
     padding: 40px 70px;
     width: 55%;
     text-align: left;
@@ -58,18 +59,18 @@
     text-align: left;
     font-size: 29px;
     line-height: 40px;
-    color: #646f87;
+    color: #525363;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .right h2 span {
-    color: #02bea2;
+    color: #00A78E;
 }
 
 .right .description {
     margin-top: 20px;
     font-size: 17px;
-    line-height: 26px;
+    line-height: 27px;
     max-width: 560px;
     text-align: justify;
     font-family: 'Ubuntu', sans-serif;
@@ -87,25 +88,26 @@
 }
 
 .experience .tab {
-    background-color: #313b50;
-    color: #F5F5F5;
+    background-color: #39455e;
+    color: #feefe5;
     padding: 22px 26px;
     width: 170px;
     border-radius: 12px;
     text-align: center;
     cursor: default;
-    border-bottom: 14px solid #02bea2;
+    border-bottom: 15px solid #47b69e;
+
 }
 
 .experience .tab .icon {
-    color: #02bea2;
-    font-size: 28px;
+    color: #feefe5;
+    font-size: 25px;
 }
 
 .experience .tab h3 {
-    margin-top: 12px;
-    font-size: 32px;
-    color: #F8F9FE;
+    margin-top: 13px;
+    font-size: 35px;
+    color: #feefe5;
 }
 
 .experience .tab p {

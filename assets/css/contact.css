@@ -2,14 +2,14 @@
 
 #contact {
     padding: 40px 0 170px;
-    margin: 140px auto 0;
+    margin: 100px auto 0;
     height: 100%;
     max-width: 900px;
 }
 
 
 #contact .contact-title {
-    color: #9094b3;
+    color: #525363;
     font-size: 37px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
@@ -17,11 +17,11 @@
 }
 
 .contact-title span {
-    color: #02bea2;
+    color: #00A78E;
 }
 
 #contact .contact-text {
-    color: #9094b3;
+    color: #525363;
     font-size: 18px;
     margin: 25px auto 0;
     text-align: center;
@@ -37,14 +37,14 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    background-color: #fffcfc;
+    background-color: #00A78E;
     padding: 90px;
-    border-radius: 12px;
+    border-radius: 9px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .container .formdiv{
-    margin-left: 30px;
+    margin-left: 20px;
     width: 100%;
     max-width: 600px;
     display: flex;
@@ -65,7 +65,7 @@
 .divBox .inputBox {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     flex-grow: 1;
 }
 
@@ -80,7 +80,7 @@ form .inputBox input , form .inputBox textarea{
     position: relative;
     background: #fff;
     width: 100%;
-    height: 54px;
+    height: 50px;
     outline: none;
     border: none;
     color: #000;
@@ -88,46 +88,48 @@ form .inputBox input , form .inputBox textarea{
     font-size: 15px;
     font-weight: 500;
     resize: none;
-    border-radius: 7px;
+    border-radius: 1px;
     padding: 0 22px;
-    margin: 12px;
+    margin: 6px;
     transition: all 300ms;
 }
 
-form .inputBox textarea{
-    height: 223px;
+form .inputBox textarea{ 
+    margin-top: 16px;
+    height: 240px;
     padding: 18px 22px;
 }
 
 
 form .inputBox.btn {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin-top: 40px;
+    margin-right: 3px;
 }
 
 form .inputBox.btn button{
-    padding: 13px 24px;
-    border: 1px solid #eb3b5a;
-    color: #F5F5F5;
+    padding: 13px 26px;
+    border: 1px solid #fff;
+    color: #fff;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
-    border-radius: 33px;
-    background-color: #eb3b5a;
+    border-radius: 4px;
+    background-color: transparent;
     transition: 300ms ease;
 }
 
 form .inputBox.btn button:hover{
-    background-color: #02bea2;
-    border: 1px solid #02bea2;
+    background-color: #000;
+    border: 1px solid #000;
 }
 
 form .inputBox.btn button:active{
     background-color: transparent;
-    color: #02bea2;
-    border: 1px solid #02bea2;
+    color: #00A78E;
+    border: 1px solid #00A78E;
 }
 
 
@@ -136,12 +138,12 @@ form .inputBox.btn button:active{
 .inputBox textarea:focus,
 .inputBox input:valid, 
 .inputBox textarea:valid {
-    background-color: #eb3b5a;
+    background-color: #fffdf8;
 }
 
 
 ::placeholder {
-    color:#9094b3;
+    color:#74768a;
     font-size: 14px;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
@@ -155,8 +157,8 @@ form .inputBox.btn button:active{
 .contactList {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 12px;
+    gap: 15px;
+    margin-top: 6px;
     text-align: center;
 }
 
@@ -167,9 +169,9 @@ form .inputBox.btn button:active{
     align-items: center ;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 185px;
     height: 180px;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 
@@ -180,39 +182,42 @@ form .inputBox.btn button:active{
     height: 52px;
     width: 52px;
     color: #fff;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 50%;
-    background-color: #00c3ca;
+    background-color: #00A78E;
     transition: 300ms;
 }
 
 
 .list .info h2 {
-    color: #9094b3;
-    font-size: 18px;
+    color: #525363;
+    font-size: 16px;
     font-weight: 500;
     margin: 25px 0 7px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .list .info a {
+    font-size: 15px;
     text-decoration: none;
-    color: #02bea2;
+    color: #525363;
     transition: 250ms;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .list .info a:hover {
-    color: #eb3b5a;
+    color: #00A78E;
 }
 
 
-
-.list .icon a:hover {
-    background-color: #eb3b5a;
+.list .icon a i {
+    transition: 700ms ease; 
 }
 
+.list .icon a:hover > i{
+    transform: rotateY(180deg);
+}
 
 
 
@@ -256,7 +261,7 @@ form .inputBox.btn button:active{
 .popup h2 {
     font-size: 35px;
     margin-top: 25px;
-    color: #00c3ca;
+    color: #00A78E;
     font-family: 'Ubuntu', sans-serif;
     cursor: default;
 }

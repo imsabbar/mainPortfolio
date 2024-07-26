@@ -1,13 +1,14 @@
 
 #portfolio {
     height: 100%;
-    padding-top: 40px;
+    padding-top: 100px;
     margin-top: 140px;
+    background-color: #fffffe;
 }
 
 
 #portfolio .portfolio-title {
-    color: #646f87;
+    color: #525363;
     font-size: 37px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
@@ -15,11 +16,11 @@
 }
 
 .portfolio-title span {
-    color: #02bea2;
+    color: #00A78E;
 }
 
 #portfolio .portfolio-text {
-    color: #646f87;
+    color: #525363;
     font-size: 18px;
     margin: 25px auto 0;
     text-align: center;
@@ -61,13 +62,13 @@
 
 .active-filter {
     color: #FFF;
-    background-color: #02bea2;
-    border: 1px solid #02bea2;
+    background-color: #00A78E;
+    border: 1px solid #00A78E;
 }
 
 .filter-item:hover {
-    background-color: #02bea2;
-    border: 1px solid #02bea2;
+    background-color: #00A78E;
+    border: 1px solid #00A78E;
 }
 
 

@@ -18,8 +18,8 @@ body::-webkit-scrollbar {
 
 
 body {
-    background: #fff;
-    color: #828ea7;
+    background: #fffdf8;
+    color: #525363;
 }
 
 
@@ -29,6 +29,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #fffdf8;
 }
 
 
@@ -55,40 +56,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6f7c96;
-    width: 42px;
-    height: 42px;
+    color: #39b197;
+    width: 40px;
+    height: 40px;
     margin: 3px 0;
     border-radius: 50%;
     overflow: hidden;
-    transition: 250ms linear;
+    transition: 200ms linear;
 }
 
 
 .social .social-link i {
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 40px;
     transition: 250ms;
 }
 
 .social .whatsapp i,
 .social .facebook {
-    font-size: 27px;
+    font-size: 24px;
 }
 
 .social .github i,
 .social .telegram i,
 .social .instagram i
  {
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .social .social-link:hover {
-    transform: translateX(6px) scale(1.07);
+    transform: translateX(5px) scale(1.07); 
 }
 
 .social .social-link:hover i{
-    color: #ff6161;
+    color: #daa686;
 }
 
 
@@ -126,13 +127,13 @@ body {
     height: 100%;
     width: 22px;
     border-radius: 15px;
-    background: #b5b4ff;
+    background: #a2f7e4;
     transition: 400ms;
 }
 
 .content-right-bar .dot-map .dot span:hover,
 .content-right-bar .dot-map .dot  span.activeColor{
-    background-color: #5a58e9;
+    background-color: #47b69e;
 }
 
 .content-right-bar .dot-map .dot.activeExpand {
@@ -168,24 +169,21 @@ body {
 }
 
 .middle-content .content .left .greeting {
-    margin-bottom: 50px;
-    font-size: 24px;
+    margin-bottom: 45px;
+    font-size: 22px;
     font-weight: 600;
     padding: 10px 0;
     overflow: hidden;
+    font-family: "Kaushan Script", cursive;
+    color: #47b69e;
 }
 
-.greeting .hand-greeting {
-    font-size: 27px;
-}
 
 
 
-.greeting span  {
+.greeting .animate {
     opacity: 0;
     transition: all 200ms ease;
-    font-family: "Kaushan Script", cursive;
-    color: #252525;
 }
 
 .greeting span.fade {
@@ -196,74 +194,40 @@ body {
 
 
 
-.middle-content .content .left .name,
-.middle-content .content .left .field {
-    font-family: "Ubuntu", sans-serif;
-    line-height: 45px;
-    font-size: 33px;
-}
-
-.name span, 
-.field span {
-    opacity: 0;
-    transition: all 1.5s ease;
-}
-
-.name span.fadeFirst,
-.field span.fadeFirst {
-    opacity: 1;
-}
-
-.name span.fadeSecond,
-.field span.fadeSecond {
-    opacity: 1;
-    color: #00a78e;
-    transition: color 500ms ease; 
-}
-
-
-
-
-/* now moving to second text animation for FIELD */
-.fieldUpdate {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    line-height: 45px;
-    font-size: 33px;
+.middle-content .content .left .name {
+    font-family: "Kaushan Script", cursive;
+    font-size: 45px;
+    color: #525363;
     overflow: hidden;
 }
 
-.fieldUpdate .second-text {
-    position: relative;
-    color: #00a78e;
-}
-
-
-/* Styling for the border effect */
-.fieldUpdate .second-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-left: 2px solid #00a78e;
-    animation: animate 5s steps(24) infinite;
-}
-
-@keyframes animate {
-    40%, 60% {
-        left: calc(100% + 4px);
-    
-    }100% {
-        left: 0%;
-    }
+.middle-content .content .left .field {
+    margin-top: 20px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    color: #525363;
+    overflow: hidden;
 }
 
 
 
 
+.name .animate,
+.field .animate {
+    transition: all 1.2s ease;
+    opacity: 0;
+}
+
+
+.name span.fade,
+.field span.fade {
+    opacity: 1;
+} 
+
+
+
+
+ 
 
 
 
@@ -272,12 +236,13 @@ body {
 
 
 .middle-content .content .left .description {
-    margin-top: 25px;
-    line-height: 25px;
+    margin-top: 12px;
+    line-height: 28px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
-    font-family: "Ubuntu" , sans-serif;
+    font-family: "Kaushan Script", cursive;
+    color: #525363;
 }
 
 .left .actions {
@@ -291,8 +256,8 @@ body {
 
 
 .actions a {
-    background-color: #5a58e9;
-    border: 1px solid #5a58e9;
+    background-color: #f1873d;
+    border: 1px solid #f1873d;
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
@@ -316,8 +281,8 @@ body {
 
 .actions .resume {
     padding: 11px 16px;
-    background-color: #ED254E;
-    border: 1px solid #ED254E;
+    background-color: #47b69e;
+    border: 1px solid #47b69e;
     display: flex;
     align-items: center;
     font-family: 'kaushan Script' , cursive;
@@ -332,13 +297,13 @@ body {
 
 
 .actions .resume:hover {
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #cfa387;
+    border: 1px solid #cfa387;
 }
 
 .actions .hire:hover {
-    background-color: #00a78e;
-    border: 1px solid #00a78e;
+    background-color: #47b69e;
+    border: 1px solid #47b69e;
     transform: scale(1.1);
 }
 
@@ -385,6 +350,7 @@ body {
 .home-profile img {
     height: 100%;
     border-radius: 50%;
+    border: 10px solid #feefe5;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
@@ -420,7 +386,7 @@ body {
 }
 
 .down-icon:hover {
-    color: #14d6d6;
+    color: #47b69e;
 }
 
 @keyframes scroll-down {

@@ -47,7 +47,7 @@ header{
     position: sticky;
     left: 0;
     z-index: 999;
-    background-color: #fff;
+    background-color: #fffdf8;
     justify-content: space-between;   
     align-items: center;
     width: 1200px;
@@ -58,15 +58,15 @@ header{
 
 
 header .logo h2 {
-    font-size: 44px;
-    color: #6d7b99;
+    font-size: 40px;
+    color: #525363;
     font-family: "Kaushan Script", cursive;
     font-weight: 550;
 }
 
 header .logo h2 span {
-    font-size: 45px;
-    color: #00A78E;
+    font-size: 41px;
+    color: #36af95;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -92,9 +92,9 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    color:#6d7b99 ;
+    color:#525363 ;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 20px;
     padding: 7px 0;
     border-radius: 27px;
     font-weight: 550;
