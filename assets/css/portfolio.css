@@ -1,7 +1,7 @@
 
 #portfolio {
     height: 100%;
-    padding: 100px 40px 40px;
+    padding: 100px 40px ;
     background-color: #fffffe;
 }
 
@@ -78,8 +78,8 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     justify-content: center;
     gap: 40px;
-    margin: 40px auto 140px;
-    width: 1200px;
+    margin: 40px auto;
+    width: 1200px; 
 }
 
 
@@ -265,16 +265,12 @@
     }
 
     .project-box {
-        padding: 12px;
+        height: 250px;
     }
 
-    .project-box .project-info {
-        padding: 5px 12px;
-    }
 
-    .project-preview {
-        height: 200px;
-    }
+
+
 
 
     .project-title {

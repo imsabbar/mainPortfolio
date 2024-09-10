@@ -199,6 +199,7 @@ body {
     font-size: 45px;
     color: #525363;
     overflow: hidden;
+    text-align: left;
 }
 
 .middle-content .content .left .field {
@@ -207,6 +208,7 @@ body {
     font-size: 24px;
     color: #525363;
     overflow: hidden;
+    text-align: left;
 }
 
 
@@ -280,7 +282,7 @@ body {
 
 
 .actions .resume {
-    padding: 11px 16px;
+    padding: 11px 18px;
     background-color: #47b69e;
     border: 1px solid #47b69e;
     display: flex;
@@ -423,33 +425,34 @@ section h2 {
 
 @media screen and (max-width: 1450px) {
 
+
     /* now for left bar social icons */
     #home .content-left-bar {
         left: 25px;
     }
 
     .social .social-link {
-        width: 39px;
-        height: 39px;
+        width: 38px;
+        height: 38px;
         margin: 2px 0;
     }
 
 
     .social .social-link i {
-        font-size: 22px;
-        line-height: 39px;
+        font-size: 20px;
+        line-height: 38px;
     }
 
     .social .whatsapp i,
     .social .facebook {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .social .github i,
     .social .telegram i,
     .social .instagram i
     {
-        font-size: 24px;
+        font-size: 21px;
     }
 
 
@@ -471,7 +474,7 @@ section h2 {
     }
 
     .content-right-bar .dot-map .dot.activeExpand {
-        flex: 0 0 45px;
+        flex: 0 0 44px;
     }
 
 
@@ -482,29 +485,29 @@ section h2 {
     }
 
     .middle-content .content .left {
-        width: 540px;
+        width: 500px;
     }
 
     .middle-content .content .left .greeting {
         margin-bottom: 25px;
-        font-size: 21px;
-    }
-
-    .greeting .hand-greeting {
-        font-size: 25px;
-    }
-
-    .left .name,
-    .left .field {
-        line-height: 40px;
-        font-size: 30px;
+        font-size: 20px;
     }
 
 
-    .left .description {
-        margin-top: 15px;
+    .middle-content .content  .left .name{
+        font-size: 37px;
+    }
+
+    .middle-content .content  .left .field {
+        margin-top: 10px;
+        font-size: 22px; 
+    }
+
+
+    .middle-content .content .left .description {
+        margin-top: 10px;
         line-height: 24px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .left .actions {
@@ -528,7 +531,8 @@ section h2 {
     }
 
     .actions .resume {
-        padding: 10px 13px;
+        padding: 10px 15px;
+        font-size: 17px;
     }
 
     .actions .resume i {
