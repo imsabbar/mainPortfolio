@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 
 body {
-    background: #fffdf8;
+    background: #fffefb;
     color: #525363;
 }
 
@@ -29,7 +29,6 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #fffdf8;
 }
 
 
@@ -196,30 +195,32 @@ body {
 
 .middle-content .content .left .name {
     font-family: "Kaushan Script", cursive;
-    font-size: 45px;
+    font-size: 44px;
     color: #525363;
     overflow: hidden;
+    text-align: left;
+    transform: translateY(-100px);
+    transition: all 1200ms ease; 
+    opacity: 0;
 }
 
 .middle-content .content .left .field {
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: "Kaushan Script", cursive;
     font-size: 24px;
     color: #525363;
     overflow: hidden;
+    text-align: left;
 }
 
 
 
 
-.name .animate,
 .field .animate {
-    transition: all 1.2s ease;
+    transition: all 1200ms ease;
     opacity: 0;
-}
+} 
 
-
-.name span.fade,
 .field span.fade {
     opacity: 1;
 } 
@@ -236,10 +237,10 @@ body {
 
 
 .middle-content .content .left .description {
-    margin-top: 12px;
-    line-height: 28px;
+    margin-top: 10px;
+    line-height: 27px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
     font-family: "Kaushan Script", cursive;
     color: #525363;

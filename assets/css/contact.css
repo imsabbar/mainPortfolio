@@ -9,7 +9,7 @@
 
 
 #contact .contact-title {
-    color: #525363;
+    color: #c9c9c9;
     font-size: 37px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
@@ -88,7 +88,7 @@ form .inputBox input , form .inputBox textarea{
     font-size: 15px;
     font-weight: 500;
     resize: none;
-    border-radius: 1px;
+    border-radius: 2px; 
     padding: 0 22px;
     margin: 6px;
     transition: all 300ms;
@@ -106,7 +106,7 @@ form .inputBox.btn {
     justify-content: right;
     align-items: center;
     margin-top: 40px;
-    margin-right: 3px;
+    margin-right: 3px; 
 }
 
 form .inputBox.btn button{

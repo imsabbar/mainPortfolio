@@ -47,7 +47,7 @@
 }
 
 #about .container .right {
-    background-color: #fffdf8;
+    background-color: #fffefb;
     padding: 40px 70px;
     width: 55%;
     text-align: left;
@@ -89,7 +89,7 @@
 
 .experience .tab {
     background-color: #39455e;
-    color: #feefe5;
+    color: #fffefb;
     padding: 22px 26px;
     width: 170px;
     border-radius: 12px;
@@ -100,14 +100,14 @@
 }
 
 .experience .tab .icon {
-    color: #feefe5;
+    color: #fffefb;
     font-size: 25px;
 }
 
 .experience .tab h3 {
     margin-top: 13px;
     font-size: 35px;
-    color: #feefe5;
+    color: #fffefb;
 }
 
 .experience .tab p {

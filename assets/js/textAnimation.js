@@ -6,8 +6,6 @@ const greetingSplitText = myGreetingText.split("");
 
 // get Name, Field and Quote
 const myNameElement = document.querySelector('.name');
-const myNameText = myNameElement.textContent;
-const nameSplitText = myNameText.split("");
 
 const myFieldElement = document.querySelector('.field');
 const myFieldText = myFieldElement.textContent;
@@ -19,7 +17,6 @@ const quoteSplitText = myQuoteText.split("");
 
 
 myGreetingElement.textContent = "";
-myNameElement.textContent = "";
 myFieldElement.textContent = "";
 myQuoteElement.textContent = "";
 
@@ -28,17 +25,6 @@ myQuoteElement.textContent = "";
 
 for(let i=0 ; i < greetingSplitText.length ; i++) 
   myGreetingElement.innerHTML += "<span class='animate'>" +greetingSplitText[i]+ "</span>";
-
-
-
-
-
-
-for(let i=0 ; i < nameSplitText.length ; i++) 
-  myNameElement.innerHTML += "<span class='animate'>" +nameSplitText[i]+ "</span>";
-
-
-
 
 
 
@@ -52,7 +38,7 @@ for(let i=0 ; i < quoteSplitText.length ; i++)
 
 
 
-let charGreeting = 0 , charName = 0, charField = 0, charQuote = 0;
+let charGreeting = 0, charField = 0, charQuote = 0;
 let timer = setInterval(onTick, 50);
 
 
@@ -60,7 +46,6 @@ let timer = setInterval(onTick, 50);
 
 function onTick() {
   const spanGreeting = myGreetingElement.querySelectorAll('.greeting span')[charGreeting];
-  const spanName = myNameElement.querySelectorAll('.name span')[charName];
   const spanField = myFieldElement.querySelectorAll('.field span')[charField];
   const spanQuote = myQuoteElement.querySelectorAll('.quote span')[charQuote];
 
@@ -70,31 +55,25 @@ function onTick() {
     charGreeting+=1;
   }
 
-  
-  if (spanName) {
-
-
-      spanName.classList.add('fade');
-
-
-
-    charName++;
-  } 
-
 
   if (spanField) {
-
-    if(spanField.classList.contains('animate'))
-      spanField.classList.add('fade');
-
-    else
-      spanField.classList.add('fade');
-
+    spanField.classList.add('fade');
     charField++;
+  }
+   
+ 
+
+  // Name animation starts only after field is complete
+  if (charField === fieldSplitText.length) {
+    if (myNameElement) {
+      myNameElement.style.opacity = '1';
+      myNameElement.style.transform = 'translateX(0)';
+    }
   }
 
 
 
+ 
   if (spanQuote) {
     spanQuote.classList.add('fade');
     charQuote++;
@@ -102,7 +81,7 @@ function onTick() {
   }
 
 
-  if (charGreeting === greetingSplitText.length && charName === nameSplitText.length && charField === fieldSplitText.length && charQuote === quoteSplitText.length) {
+  if (charGreeting === greetingSplitText.length && charField === fieldSplitText.length && charQuote === quoteSplitText.length) {
     complete();
     return;
   }
