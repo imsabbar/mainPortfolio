@@ -1,8 +1,7 @@
 
 #skills{
     height: 100%;
-    padding: 40px 0;
-    margin-top: 100px;
+    padding: 100px 0;
     color: #525363;
 }
 
@@ -170,19 +169,19 @@
 }
 
 .skill-progress.js span::after {
-    content: "99%";
+    content: "90%";
 }
 
 .skill-progress.jquery span::after {
-    content: "95%";
+    content: "90%";
 }
 
 .skill-progress.ajax span::after {
-    content: "95%";
+    content: "90%";
 }
 
 .skill-progress.php span::after {
-    content: "95%";
+    content: "90%";
 }
 
 .skill-progress.mysql span::after {
@@ -190,11 +189,11 @@
 }
 
 .skill-progress.mongodb span::after {
-    content: "100%";
+    content: "25%";
 }
 
 .skill-progress.laravel span::after {
-    content: "85%";
+    content: "25%";
 }
 
 .skill-progress.wordpress span::after {
@@ -214,19 +213,19 @@
 }
 
 .skill-progress.python span::after {
-    content: "95%";
+    content: "90%";
 }
 
 .skill-progress.java span::after {
-    content: "100%";
-}
-
-.skill-progress.react span::after {
     content: "80%";
 }
 
+.skill-progress.react span::after {
+    content: "25%";
+}
+
 .skill-progress.R span::after {
-    content: "85%";
+    content: "60%";
 }
 
 .skill-progress.jupyter span::after {
@@ -246,19 +245,19 @@
 }
 
 .skill-progress.js span {
-    width: 99%;
+    width: 90%;
 }
 
 .skill-progress.jquery span {
-    width: 95%;
+    width: 90%;
 }
 
 .skill-progress.ajax span {
-    width: 95%;
+    width: 90%;
 }
 
 .skill-progress.php span {
-    width: 95%;
+    width: 90%;
 }
 
 .skill-progress.mysql span {
@@ -266,11 +265,11 @@
 }
 
 .skill-progress.mongodb span {
-    width: 100%;
+    width: 25%;
 }
 
 .skill-progress.laravel span {
-    width: 85%;
+    width: 25%;
 }
 
 .skill-progress.wordpress span {
@@ -290,19 +289,19 @@
 }
 
 .skill-progress.react span {
-    width: 80%;
+    width: 25%;
 }
 
 .skill-progress.python span {
-    width: 95%;
+    width: 90%;
 }
 
 .skill-progress.java span {
-    width: 85%;
+    width: 80%;
 }
 
 .skill-progress.R span {
-    width: 85%;
+    width: 60%;
 }
 
 .skill-progress.jupyter span {

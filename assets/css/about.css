@@ -1,6 +1,6 @@
 
 #about {
-    padding: 60px 0;
+    padding: 120px 0;
     height: 100%;
     text-align: center;
     display: flex;
@@ -38,7 +38,7 @@
     flex-direction: row-reverse;
     max-width: 1300px;
     height: 720px;
-    margin: 70px auto;
+    margin: 70px auto 0;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -123,11 +123,13 @@
 
 
 #about .container .left {
-    width: 45%;
+    width: 45%; 
+    height: 100%;
 }
 
 #about .container .left .myProfile {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -261,63 +263,53 @@
     }
 
     #about .container {
-        margin-top: 60px;
-    }
-
-    .container .left {
-        width: 350px;
-        margin-right: 60px;
-    }
-
-    .left .about-profile {
-        width: 250px;
-        height: 250px;
-    }
-
-
-
-
-    .container .left .action {
-        margin-top: 60px;
-    }
-
-    .action a {
-        padding: 12px 24px;
-        font-size: 14px;
+        margin: 60px auto 0;
+        max-width: 1000px;
+        height: 670px;
     }
 
 
 
 
 
-    /* Now for right content */
+    /* for right content */
     #about .container .right {
-        max-width: 515px;
+        padding: 30px 40px;
     }
 
     .right h2 {
-        font-size: 27px;
-        line-height: 38px;
+        font-size: 25px;
+        line-height: 34px;
     }
 
     .right .description {
         margin-top: 18px;
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 515px;
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 520px;
     }
 
-    .right .experience .tab{
-        padding: 20px 15px;
-        width: 165px;
+    .right .experience {
+        margin-top: 45px;
+    }
+
+    .experience .tab {
+        width: 150px;
+        padding: 20px 23px ;
+        border-bottom: 13px solid #47b69e;
     }
 
     .experience .tab .icon {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .experience .tab h3 {
-        font-size: 25px;
+        margin-top: 10px;
+        font-size: 32px;
     }
-    
+
+    .experience .tab p {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
